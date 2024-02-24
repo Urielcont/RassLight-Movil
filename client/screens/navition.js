@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import PrototipoScreen from './protitpo';
+
 
 const Stack = createStackNavigator();
 
@@ -26,21 +26,21 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.header}>
         {/* Imagen a la izquierda */}
         <Image
-          source={require('./assets/izq.png')}
+          source={require('../../assets/izq.png')}
           resizeMode="cover"
           style={[styles.headerImage, styles.leftImage]}
         />
         
         {/* Imagen en el centro */}
         <Image
-          source={require('./assets/logo.png')}
+          source={require('../../assets/logo.png')}
           resizeMode="cover"
           style={[styles.headerImage, styles.centerImage]}
         />
         
         {/* Imagen a la derecha */}
         <Image
-          source={require('./assets/der.png')}
+          source={require('../../assets/der.png')}
           resizeMode="cover"
           style={[styles.headerImage, styles.rightImage]}
         />
@@ -65,7 +65,6 @@ const HomeScreen = ({ navigation }) => {
       {/* Contenido */}
       <ScrollView style={styles.content}>
         {selectedOption === 'Inicio' && <View style={[styles.page, { backgroundColor: 'red' }]}><Text>Contenido de Inicio</Text></View>}
-        {selectedOption === 'Prototipo' && <PrototipoScreen />}
         {selectedOption === 'SobreNosotros' && <View style={[styles.page, { backgroundColor: 'green' }]}><Text>Contenido de Sobre Nosotros</Text></View>}
         {selectedOption === 'Contactanos' && <View style={[styles.page, { backgroundColor: 'yellow' }]}><Text>Contenido de Contáctanos</Text></View>}
       </ScrollView>
@@ -74,35 +73,35 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.footer}>
         {/* Botón 1 */}
         <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('facebook')}>
-           <Image source={require('./assets/face_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('./assets/fa_or.png')} style={styles.buttonIcon} />
+           <Image source={require('../../assets/face_fon.png')} style={styles.backgroundImage} />
+          <Image source={require('../../assets/fa_or.png')} style={styles.buttonIcon} />
           <Text style={styles.buttonText1}>Facebook</Text>
         </TouchableOpacity>
 
         {/* Botón 2 */}
         <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('Instagram')}>
-           <Image source={require('./assets/insta_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('./assets/insta_or.png')} style={styles.buttonIcon} />
+           <Image source={require('../../assets/insta_fon.png')} style={styles.backgroundImage} />
+          <Image source={require('../../assets/insta_or.png')} style={styles.buttonIcon} />
           <Text style={styles.buttonText1}>Instagram</Text>
         </TouchableOpacity>
 
         {/* Botón 3 */}
         <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('Youtube')}>
-           <Image source={require('./assets/you_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('./assets/you_or.png')} style={styles.buttonIcon} />
+           <Image source={require('../../assets/you_fon.png')} style={styles.backgroundImage} />
+          <Image source={require('../../assets/you_or.png')} style={styles.buttonIcon} />
           <Text style={styles.buttonText1}>Youtube</Text>
         </TouchableOpacity>
 
         {/* Botón 4 */}
         <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('WhatsApp')}>
-           <Image source={require('./assets/wh_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('./assets/wh_or.png')} style={styles.buttonIcon} />
+           <Image source={require('../../assets/wh_fon.png')} style={styles.backgroundImage} />
+          <Image source={require('../../assets/wh_or.png')} style={styles.buttonIcon} />
         
           <Text style={styles.buttonText1}>WhatsApp</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.footer2}>
-        <Image source={require('./assets/logo_chi.png')} style={styles.logoIcon} />
+        <Image source={require('../../assets/logo_chi.png')} style={styles.logoIcon} />
         <View style={styles.footerTextContainer}>
           <Text style={styles.footerText}>pagina principal</Text>
           <Text style={styles.footerText}>contacto</Text>
@@ -116,7 +115,7 @@ const HomeScreen = ({ navigation }) => {
         
         </View>
         
-          <Image source={require('./assets/map.png')} style={styles.mapIcon} />
+          <Image source={require('../../assets/map.png')} style={styles.mapIcon} />
       </View>
         <View style={styles.footer3}>
          <Text style={styles.footerText}>© 2024 RassLight</Text>

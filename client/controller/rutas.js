@@ -15,7 +15,7 @@ function Router() {
   return (
     <NavigationContainer>
         {/* definir la ruta inicial como 'PrincipalScreen'*/}
-      <Stack.Navigator initialRouteName='PrincipalScreen'> 
+      <Stack.Navigator initialRouteName='Navigation'> 
         <Stack.Screen name="PrincipalScreen" component={PrincipalScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Navigation" component={Navigation} options={{ headerShown: false }}/>
 
