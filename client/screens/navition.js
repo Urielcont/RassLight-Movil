@@ -5,7 +5,7 @@ import PrototipoScreen from './protitpo';
 
 const Stack = createStackNavigator();
 
-const App = () => {
+const Navigation = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
@@ -246,4 +246,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Navigation;
