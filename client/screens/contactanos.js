@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, StyleSheet, Image, TextInput, TouchableOpacity, Text } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-
+import Footer from './footer';
 const ContactForm = () => {
   return (
+  <View>
     <View style={styles.container}>
       {/* Imagen en la parte superior derecha */}
       <Image
@@ -100,6 +101,8 @@ const ContactForm = () => {
         </View>
       </View>
     </View>
+  <Footer/>
+  </View>
   );
 };
 

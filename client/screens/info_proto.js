@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-
+import Footer from './footer';
 import {
   StyleSheet,
   View,
@@ -165,7 +165,8 @@ export default class VerticalStackLayout extends Component {
           </View>
         </View>
       </View>
-            </View>
+    <Footer/>
+    </View>
     );
   }
 }

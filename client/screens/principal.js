@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ScrollView } from 'react-native';
+import Footer from './footer';
 
 const logo = require('../../assets/logo.png');
 const fondo1 = require('../../assets/img1.jpg');
@@ -176,22 +177,6 @@ function PrincipalScreen() {
   return (
     <ScrollView style={styles.container}>
 
-      <Image source={logo} style={styles.logo} />
-      {/* header */}
-      <View style={styles.header}>
-        <TouchableOpacity>
-          <Text style={styles.text_header}>Inicio</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.text_header}>Prototipo</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.text_header}>Sobre nosotros</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.text_header}>Contactanos</Text>
-        </TouchableOpacity>
-      </View>
       {/* Primera seccion de bienvenida */}
       <View style={styles.bienvenido}>
         <Image source={fondo1} style={styles.fondo1} />
@@ -225,57 +210,7 @@ function PrincipalScreen() {
           <View style={styles.subtitulo_container}><Text style={styles.subtitulo}>INFRAESTRCTURA EN LA NUBE</Text></View>
         </TouchableOpacity>
       </View>
-
-      <View style={styles.footer}>
-        {/* Botón 1 */}
-        <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('facebook')}>
-           <Image source={require('../../assets/face_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('../../assets/fa_or.png')} style={styles.buttonIcon} />
-          <Text style={styles.buttonText1}>Facebook</Text>
-        </TouchableOpacity>
-
-        {/* Botón 2 */}
-        <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('Instagram')}>
-           <Image source={require('../../assets/insta_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('../../assets/insta_or.png')} style={styles.buttonIcon} />
-          <Text style={styles.buttonText1}>Instagram</Text>
-        </TouchableOpacity>
-
-        {/* Botón 3 */}
-        <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('Youtube')}>
-           <Image source={require('../../assets/you_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('../../assets/you_or.png')} style={styles.buttonIcon} />
-          <Text style={styles.buttonText1}>Youtube</Text>
-        </TouchableOpacity>
-
-        {/* Botón 4 */}
-        <TouchableOpacity style={styles.button} onPress={() => handleOptionPress('WhatsApp')}>
-           <Image source={require('../../assets/wh_fon.png')} style={styles.backgroundImage} />
-          <Image source={require('../../assets/wh_or.png')} style={styles.buttonIcon} />
-        
-          <Text style={styles.buttonText1}>WhatsApp</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.footer2}>
-        <Image source={require('../../assets/logo_chi.png')} style={styles.logoIcon} />
-        <View style={styles.footerTextContainer}>
-          <Text style={styles.footerText}>pagina principal</Text>
-          <Text style={styles.footerText}>contacto</Text>
-          <Text style={styles.footerText}>cotizacion</Text>
-        </View>
-        <View style={styles.footerTextContainer}>
-          <Text style={styles.footerText}>Datos de la empresa</Text>
-          <Text style={styles.footerText}>hsdbvbvhfbvibdfib</Text>
-          <Text style={styles.footerText}>hsdbvbvhfbvibdfib</Text>
-          <Text style={styles.footerText}>hsdbvbvhfbvibdfib</Text>
-        
-        </View>
-        
-          <Image source={require('../../assets/map.png')} style={styles.mapIcon} />
-      </View>
-        <View style={styles.footer3}>
-         <Text style={styles.footerText}>© 2024 RassLight</Text>
-        </View>
+      <Footer/>
     </ScrollView>
   );
 }
