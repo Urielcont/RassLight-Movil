@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import PrototipoScreen from './info_proto';
 import ContactoScreen from './contactanos';
 import PrincipalScreen from './principal';
+import SobreNosotrosScreen from './sobre_nosotros';
 
 const Stack = createStackNavigator();
 
@@ -51,7 +52,7 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView style={styles.content}>
         {selectedOption === 'Inicio' && <PrincipalScreen/>}
         {selectedOption === 'Prototipo' && <PrototipoScreen />}
-        {selectedOption === 'SobreNosotros' && <View style={[styles.page, { backgroundColor: 'gray' }]}><Text>Contenido de Inicio</Text></View>}
+        {selectedOption === 'SobreNosotros' && <View style={[styles.page, { backgroundColor: 'gray' }]}><Text>Contenido</Text></View>}
         {selectedOption === 'Contactanos' && <ContactoScreen/>}
       </ScrollView>
 

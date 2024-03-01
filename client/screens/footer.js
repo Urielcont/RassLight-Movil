@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import PrototipoScreen from './info_proto';
 import ContactoScreen from './contactanos';
 import PrincipalScreen from './principal';
+import SobreNosotrosScreen from './sobre_nosotros';
 
 const Stack = createStackNavigator();
 
