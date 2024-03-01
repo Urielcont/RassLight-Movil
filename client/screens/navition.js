@@ -52,7 +52,7 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView style={styles.content}>
         {selectedOption === 'Inicio' && <PrincipalScreen/>}
         {selectedOption === 'Prototipo' && <PrototipoScreen />}
-        {selectedOption === 'SobreNosotros' && <View style={[styles.page, { backgroundColor: 'gray' }]}><Text>Contenido</Text></View>}
+        {selectedOption === 'SobreNosotros' && <SobreNosotrosScreen/>}
         {selectedOption === 'Contactanos' && <ContactoScreen/>}
       </ScrollView>
 
